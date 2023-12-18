@@ -1,0 +1,864 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css');
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: local("Inter"), local("sans-serif"),
+
+}
+.arrow{
+  display: flex !important;
+ align-items: center !important;
+ padding: 10px !important;
+}
+
+.btn-primary {
+  background-color: #7e6990;
+  color: #fff;
+}
+
+.btn-round {
+  border-width: 1px;
+  border-radius: 30px !important;
+  padding: 11px 23px;
+}
+
+
+.form-control {
+  box-shadow: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 1px solid #e3e3e3;
+  border-radius: 30px;
+  color: #2c2c2c;
+  height: auto;
+  line-height: normal;
+  font-size: 0.8571em;
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+
+
+.form-control + .input-group-addon {
+  background-color: transparent;
+}
+.form-control + .input-group-addon:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.form-group .form-control,
+.input-group .form-control {
+  padding: 10px 18px 10px 18px;
+}
+.form-group .form-control + .input-group-addon,
+.input-group .form-control + .input-group-addon {
+  padding: 9px 18px 5px 0;
+}
+.form-group .input-group-addon,
+.input-group .input-group-addon {
+  padding: 8px 0 6px 18px;
+}
+
+.input-group-addon {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 30px;
+  color: #555;
+  padding: -0.5rem 0 -0.5rem -0.3rem;
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+}
+
+.input-group,
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-right: 0 none;
+}
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child) {
+  border-left: 0 none;
+}
+
+textarea.form-control {
+  max-width: 100%;
+  padding: 10px 10px 0 0;
+  resize: none;
+  padding: 0px !important;
+  margin-top: 20px;
+  margin-left: 10px;
+  border: none;
+  border-bottom: 1px solid #e3e3e3;
+  border-radius: 0;
+ 
+}
+
+.form-group {
+  position: relative;
+}
+
+.checkbox,
+.radio {
+  margin-bottom: 12px;
+}
+.checkbox label,
+.radio label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+  line-height: 27px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  top: 0;
+  background-color: transparent;
+  border: 1px solid #e3e3e3;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+.checkbox label::after {
+  font-family: "Material-Design-Iconic-Font";
+  content: "\f26b";
+  top: 0px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0;
+  color: #555;
+  border: 0;
+  background-color: inherit;
+}
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+a {
+  color: #7e6990;
+}
+h2,
+.h2 {
+  font-size: 1.9em;
+  margin-bottom: 30px;
+}
+
+h6,
+.h6 {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+p {
+  line-height: 1.61em;
+}
+
+body {
+  color: #333;
+  font-size: 14px;
+  
+
+
+}
+
+img {
+  max-width: 100%;
+  border-radius: 1px;
+
+}
+
+.m-b-0,
+.checkbox label,
+.radio label,
+.authentication .card-plain .header h5,
+.navbar-nav.navbar-left .dropdown-menu ul.menu .media,
+.navbar-nav.navbar-left .input-group,
+.sidebar .user-info .detail h4,
+.right-sidebar .card,
+.right-sidebar .card ul,
+.block-header .breadcrumb,
+.card .header,
+.page-calendar .event-name h6,
+.page-calendar .event-name h4,
+.page-calendar .event-name p,
+.page-calendar .event-name address,
+.activity li a .info h4,
+.chat-wrapper .card .input-group,
+.project_list .table,
+.weather .city h3,
+.inbox-widget .inbox-inner .inbox-item-info .inbox-date,
+.inbox-widget .inbox-inner .inbox-item-info .author,
+.inbox-widget .inbox-inner .inbox-item-info .inbox-message,
+.profile_state li h4,
+.social_media_table .table,
+.new_friend_list,
+.new_friend_list li .users_name,
+.contact .action_bar .delete_all,
+.contact .c_list .checkbox,
+.contact .c_list .c_name,
+.contact .c_list address,
+.profile-page .profile-sub-header,
+.profile-page #timeline .timeline .timeline-item {
+  margin-bottom: 0px;
+}
+.m-t-5,
+.card .card-inside-title small,
+.card .header h2 small,
+.page-calendar .event-name address,
+.team-info,
+.new_friend_list li .users_name {
+  margin-top: 5px;
+}
+
+.m-r-20,
+.media.mleft .media-left,
+.bs-example .media .media-left {
+  margin-right: 20px;
+}
+.margin-0,
+.card .header .header-dropdown,
+.card .header h2,
+.media .media-body .media-heading,
+.wizard .content,
+.wizard .content .body label.error,
+.dropdown-menu ul.menu .menu-info h4,
+.dropdown-menu ul.menu .menu-info p,
+.fc-overlay.right,
+.fc .fc-toolbar,
+.fc .fc-toolbar h2,
+.chat-wrapper .card,
+.project_widget .pw_content .pw_header h6,
+.weather2 .city-selected .temp h2,
+.weather2 .days-list,
+.agent .agent-content .agent-name h4,
+.agent .agent-content .agent-contact-details,
+.agent .agent-content .social-icons,
+.inbox-widget,
+.inbox-widget .inbox-inner .hover_action .btn,
+.social_widget2 .name h5,
+.profile_state,
+.contact .action_bar .btn,
+.contact .action_bar .search,
+.contact .c_list tr td .btn,
+.profile-page .profile-sub-header ul.box-list,
+.profile-page .profile-sub-header ul.box-list li p {
+  margin: 0 !important;
+}
+
+.p-l-10,
+section.content {
+  padding-left: 10px;
+}
+
+.p-r-10,
+section.content {
+  padding-right: 10px;
+}
+
+.font-13,
+.right_chat .media .message,
+.card .header h2 small,
+.dropdown-menu .header,
+.dropdown-menu ul.menu .menu-info p i,
+.weather2 .city-selected .city span {
+  font-size: 13px;
+}
+.font-14,
+.card .body,
+.dropdown-menu ul.menu .menu-info h4,
+.dropdown-menu > li > a,
+.chat-launcher:before,
+.chat-launcher:after,
+.inbox-widget .inbox-inner .inbox-item-info .author,
+.profile-page #timeline .timeline {
+  font-size: 14px;
+}
+.font-15,
+.sidebar .menu .list .menu-toggle:after,
+.sidebar .menu .list .menu-toggle:before,
+.right_chat .media .name,
+body,
+.card .card-inside-title,
+.card .header h2,
+.wizard .steps .number,
+.activity li a .info h4,
+.user_activity .b-accent .sl-item .sl-content h5,
+.weather2 .city-selected .night,
+.contact .c_list address i {
+  font-size: 15px;
+}
+
+.block-header {
+  padding: 15px;
+}
+.block-header h2 {
+  margin: 0 !important;
+  font-size: 20px;
+}
+.block-header h2 small {
+  display: block;
+  margin-top: 8px;
+  color: #616161;
+  font-size: 13px;
+}
+
+
+body {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  /* font-family: "Montserrat", Arial, Tahoma, sans-serif; */
+  font-weight: 400;
+}
+button,
+input,
+select,
+a {
+  outline: none !important;
+}
+
+section.content {
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0px 0px 15px 250px;
+  z-index: 9;
+  position: relative;
+}
+section.content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+}
+
+section small {
+  font-size: 90%;
+}
+
+.inlineblock,
+.navbar-header,
+.navbar-nav.navbar-left,
+.navbar-nav.navbar-left > li,
+.navbar-nav > li > a,
+.sidebar,
+.right-sidebar .choose-skin li,
+.right-sidebar .choose-skin li div,
+.right-sidebar .theme-light-dark li,
+.right_chat .media .message,
+.right_chat .media .status,
+.wizard .actions ul,
+.dropdown-menu ul.menu .icon-circle,
+.dropdown-menu ul.menu .menu-info,
+.team-info li,
+.chat-widget .chat-scroll-list li.left .chat-info,
+.chat-widget .chat-scroll-list li.right .chat-info,
+.weather .days li,
+.agent .agent-content .agent-contact-details li span,
+.agent .agent-content .social-icons li,
+.agent .agent-content .social-icons li a,
+.member-card .social-links li,
+.social_icon,
+.w_calender span + span,
+.w_calender ul li,
+.contact .c_list .checkbox,
+.contact .c_list .c_name {
+  display: inline-block;
+}
+.displayblock,
+.navbar-nav.navbar-left .dropdown-menu ul.menu .media .media-body .name,
+.navbar-nav.navbar-left .dropdown-menu ul.menu .media .media-body .message,
+.sidebar .menu .list a,
+.right_chat .media .name,
+.card .header .header-dropdown li a,
+.card .header h2 small,
+.wizard .actions,
+.wizard .actions a,
+.wizard .actions a:hover,
+.wizard .actions a:active,
+.wizard .steps,
+.wizard .steps a,
+.wizard .steps a:hover,
+.wizard .steps a:active,
+.dropdown-menu ul.menu li a,
+.dropdown-menu .footer a,
+.dropdown-menu > li > a,
+.page-calendar .event-name h4 span,
+.page-calendar .event-name p,
+.activity li a,
+.user_activity .b-accent .sl-item .sl-content small,
+.chat-widget .chat-scroll-list li .message,
+.project_widget .pw_img:before,
+.project_widget .pw_content .pw_meta small,
+.project_widget .pw_content .pw_meta span,
+.twitter-feed p,
+.weather .days li .degrees,
+.weather2 .city-selected .temp h2,
+.agent .agent-avatar a,
+.agent .agent-content .agent-contact-details,
+.inbox-widget .inbox-inner:hover .hover_action,
+.inbox-widget .inbox-inner .inbox-item-info .inbox-message,
+.member-card .text-pink,
+.social_media_table .list-name,
+.new_friend_list li .join_date,
+.w_calender span,
+.profile-page .profile-header .job_post,
+.sprice li,
+.sprice2 .data li,
+.file_manager .file .file-name small {
+  display: block;
+}
+
+.card {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #fff;
+  border-radius: 0.1875rem;
+  margin-bottom: 30px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  box-shadow: none;
+}
+
+.card .header {
+  color: #424242;
+  padding: 20px;
+  position: initial;
+  box-shadow: none;
+}
+
+.card .header h2 {
+  color: #757575;
+  position: relative;
+}
+.card .header h2::before {
+  position: absolute;
+  width: 2px;
+  height: 18px;
+  left: -20px;
+  top: 0;
+  content: "";
+}
+.card .header h2 small {
+  color: #9e9e9e;
+  line-height: 15px;
+}
+
+.card .body {
+  color: #424242;
+  font-weight: 400;
+  padding: 20px;
+}
+
+
+
+.inlineblock,
+.navbar-header,
+.navbar-nav.navbar-left,
+.navbar-nav.navbar-left > li,
+.navbar-nav > li > a,
+.sidebar,
+.right-sidebar .choose-skin li,
+.right-sidebar .choose-skin li div,
+.right-sidebar .theme-light-dark li,
+.right_chat .media .message,
+.right_chat .media .status,
+.wizard .actions ul,
+.dropdown-menu ul.menu .icon-circle,
+.dropdown-menu ul.menu .menu-info,
+.team-info li,
+.chat-widget .chat-scroll-list li.left .chat-info,
+.chat-widget .chat-scroll-list li.right .chat-info,
+.weather .days li,
+.agent .agent-content .agent-contact-details li span,
+.agent .agent-content .social-icons li,
+.agent .agent-content .social-icons li a,
+.member-card .social-links li,
+.social_icon,
+.w_calender span + span,
+.w_calender ul li,
+.contact .c_list .checkbox,
+.contact .c_list .c_name {
+  display: inline-block;
+}
+
+
+
+.checkbox input[type="checkbox"]:disabled + label::before,
+.checkbox input[type="checkbox"]:disabled + label::after {
+  cursor: not-allowed;
+}
+.checkbox input[type="checkbox"]:disabled + label,
+.radio input[type="radio"]:disabled + label {
+  cursor: not-allowed;
+}
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%;
+}
+.checkbox.checkbox-inline {
+  margin-top: 0;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+  background-color: #428bca;
+  border-color: #428bca;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+.checkbox-danger input[type="checkbox"]:checked + label::before {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+.checkbox-danger input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+.checkbox-info input[type="checkbox"]:checked + label::before {
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+.checkbox-info input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+.checkbox-warning input[type="checkbox"]:checked + label::before {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+.checkbox-warning input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+.checkbox-success input[type="checkbox"]:checked + label::before {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+.checkbox-success input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+
+
+
+.m-t-0,
+.sidebar .user-info .detail h4,
+.card .card-inside-title:first-child,
+.page-calendar .event-name h4,
+.activity li a .info h4,
+.weather .city,
+.weather .city h3,
+.weather2 .days-list .day h5,
+.product-report .counter,
+.contact .c_list .checkbox,
+.profile-page #timeline .timeline .timeline-item .item-content,
+.sprice h4,
+.sprice2 h4 {
+  margin-top: 0px;
+}
+
+
+.m-b-0,
+.checkbox label,
+.radio label,
+.authentication .card-plain .header h5,
+.navbar-nav.navbar-left .dropdown-menu ul.menu .media,
+.navbar-nav.navbar-left .input-group,
+.sidebar .user-info .detail h4,
+.right-sidebar .card,
+.right-sidebar .card ul,
+.block-header .breadcrumb,
+.card .header,
+.page-calendar .event-name h6,
+.page-calendar .event-name h4,
+.page-calendar .event-name p,
+.page-calendar .event-name address,
+.activity li a .info h4,
+.chat-wrapper .card .input-group,
+.project_list .table,
+.weather .city h3,
+.inbox-widget .inbox-inner .inbox-item-info .inbox-date,
+.inbox-widget .inbox-inner .inbox-item-info .author,
+.inbox-widget .inbox-inner .inbox-item-info .inbox-message,
+.profile_state li h4,
+.social_media_table .table,
+.new_friend_list,
+.new_friend_list li .users_name,
+.contact .action_bar .delete_all,
+.contact .c_list .checkbox,
+.contact .c_list .c_name,
+.contact .c_list address,
+.profile-page .profile-sub-header,
+.profile-page #timeline .timeline .timeline-item {
+  margin-bottom: 0px;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+  opacity: 1 !important;
+}
+
+.checkbox label::after {
+  font-family: "Material-Design-Iconic-Font" !important;
+  content: "\f26b";
+  top: 0px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0;
+  color: #555;
+  border: 0;
+  background-color: inherit;
+}
+
+
+.checkbox,
+.radio {
+  margin-bottom: 12px;
+}
+
+.checkbox label,
+.radio label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+  line-height: 27px;
+}
+
+
+.checkbox label::before,
+.checkbox label::after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  top: 0;
+  background-color: transparent;
+  border: 1px solid #e3e3e3;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+.checkbox label::after {
+  font-family: "Material-Design-Iconic-Font";
+  content: "\f26b";
+  top: 0px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0;
+  color: #555;
+  border: 0;
+  background-color: inherit;
+}
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+.checkbox input[type="checkbox"]:disabled + label,
+.radio input[type="radio"]:disabled + label {
+  color: #9a9a9a;
+  opacity: 0.5;
+}
+.checkbox input[type="checkbox"]:disabled + label::before,
+.checkbox input[type="checkbox"]:disabled + label::after {
+  cursor: not-allowed;
+}
+.checkbox input[type="checkbox"]:disabled + label,
+.radio input[type="radio"]:disabled + label {
+  cursor: not-allowed;
+}
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%;
+}
+.checkbox.checkbox-inline {
+  margin-top: 0;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+  background-color: #428bca;
+  border-color: #428bca;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+.checkbox-danger input[type="checkbox"]:checked + label::before {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+.checkbox-danger input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+.checkbox-info input[type="checkbox"]:checked + label::before {
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+.checkbox-info input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+.checkbox-warning input[type="checkbox"]:checked + label::before {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+.checkbox-warning input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+.checkbox-success input[type="checkbox"]:checked + label::before {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+.checkbox-success input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+
+
+[data-background-color] .checkbox label::before,
+[data-background-color] .checkbox label::after,
+[data-background-color] .radio label::before,
+[data-background-color] .radio label::after {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+[data-background-color] .checkbox label::after,
+[data-background-color] .checkbox label,
+[data-background-color] .radio label {
+  color: #fff;
+}
+[data-background-color] .checkbox input[type="checkbox"]:disabled + label,
+[data-background-color] .radio input[type="radio"]:disabled + label {
+  color: #fff;
+}
+
+.m-t-0,
+.sidebar .user-info .detail h4,
+.card .card-inside-title:first-child,
+.page-calendar .event-name h4,
+.activity li a .info h4,
+.weather .city,
+.weather .city h3,
+.weather2 .days-list .day h5,
+.product-report .counter,
+.contact .c_list .checkbox,
+.profile-page #timeline .timeline .timeline-item .item-content,
+.sprice h4,
+.sprice2 h4 {
+  margin-top: 0px;
+}
+
+.m-b-0,
+.checkbox label,
+.radio label,
+.authentication .card-plain .header h5,
+.navbar-nav.navbar-left .dropdown-menu ul.menu .media,
+.navbar-nav.navbar-left .input-group,
+.sidebar .user-info .detail h4,
+.right-sidebar .card,
+.right-sidebar .card ul,
+.block-header .breadcrumb,
+.card .header,
+.page-calendar .event-name h6,
+.page-calendar .event-name h4,
+.page-calendar .event-name p,
+.page-calendar .event-name address,
+.activity li a .info h4,
+.chat-wrapper .card .input-group,
+.project_list .table,
+.weather .city h3,
+.inbox-widget .inbox-inner .inbox-item-info .inbox-date,
+.inbox-widget .inbox-inner .inbox-item-info .author,
+.inbox-widget .inbox-inner .inbox-item-info .inbox-message,
+.profile_state li h4,
+.social_media_table .table,
+.new_friend_list,
+.new_friend_list li .users_name,
+.contact .action_bar .delete_all,
+.contact .c_list .checkbox,
+.contact .c_list .c_name,
+.contact .c_list address,
+.profile-page .profile-sub-header,
+.profile-page #timeline .timeline .timeline-item {
+  margin-bottom: 0px;
+}
+
+.inlineblock,
+.navbar-header,
+.navbar-nav.navbar-left,
+.navbar-nav.navbar-left > li,
+.navbar-nav > li > a,
+.sidebar,
+.right-sidebar .choose-skin li,
+.right-sidebar .choose-skin li div,
+.right-sidebar .theme-light-dark li,
+.right_chat .media .message,
+.right_chat .media .status,
+.wizard .actions ul,
+.dropdown-menu ul.menu .icon-circle,
+.dropdown-menu ul.menu .menu-info,
+.team-info li,
+.chat-widget .chat-scroll-list li.left .chat-info,
+.chat-widget .chat-scroll-list li.right .chat-info,
+.weather .days li,
+.agent .agent-content .agent-contact-details li span,
+.agent .agent-content .social-icons li,
+.agent .agent-content .social-icons li a,
+.member-card .social-links li,
+.social_icon,
+.w_calender span + span,
+.w_calender ul li,
+.contact .c_list .checkbox,
+.contact .c_list .c_name {
+  display: inline-block;
+}
